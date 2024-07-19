@@ -1,9 +1,13 @@
-import Link from 'next/link'
+import Head from 'next/head'
 import * as React from "react";
 
 export default function FilePage(props) {
     return (
-        <>
+        <div>
+            <Head>
+                <title>Aniketh Tarikonda - Files</title>
+            </Head>
+            
             <h1>All Files</h1>
             {props.files.map((str, index) => {
                 const sep_data = str.split('&^&')
@@ -21,7 +25,7 @@ export default function FilePage(props) {
                     </div>
             )})
             }
-        </>
+        </div>
     )
 }
 

@@ -26,6 +26,8 @@ export default function App({Component, pageProps}) {
                 </nav>
             </div>
             <Component {...pageProps}/>
+
+            <link rel="icon" href="/favicon.ico" sizes="any" />
         </>
     )
 }
